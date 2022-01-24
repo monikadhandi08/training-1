@@ -1,4 +1,4 @@
-def checkpossibility(self,array:list[int])->bool:
+def checkpossibility(array:list[int])->bool:
     n,index=len(array),0
     if n==1:
         return True
@@ -11,5 +11,7 @@ def checkpossibility(self,array:list[int])->bool:
         return True
     if(array[index-1] > array[index+1] and array[index-2] > array[index]):
         return False
-
     return True
+
+g=checkpossibility([10,5,1])
+print(g)
